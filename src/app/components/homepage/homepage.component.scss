@@ -1,8 +1,14 @@
 main {
     width: 100%;
-    height: calc(100dvh - 120px);
+    height: 100dvh;
     background-color: var(--color-secondary);
     color: var(--color-background);
     clip-path: url(#main-clip);
     padding: 0 var(--spacing-l);
+}
+
+app-header {
+   position:absolute;
+   top:0;
+   width: 100%;
 }

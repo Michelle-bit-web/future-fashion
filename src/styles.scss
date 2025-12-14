@@ -12,6 +12,9 @@
         border: none;
         font-family: inherit;
     }
+    ul {
+        list-style: none;
+    }
 }
 
 /* Colors */
@@ -37,8 +40,33 @@
 }
 
 /* Typography */
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/assets/fonts/cinzel-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cinzel-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/assets/fonts/cinzel-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cinzel-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../public/assets/fonts/cinzel-v26-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
-    --text-size-h1: 48px;
+    --text-size-h1: 72px;
     --text-size-h2: 36px; 
     --text-size-h3: 24px;
     --text-size-base: 24px;
@@ -46,7 +74,7 @@
 }
 
 :root {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cinzel', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
     line-height: 1.5;
 

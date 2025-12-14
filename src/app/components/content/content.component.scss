@@ -1,6 +1,41 @@
-header {
-  height: 120px;
+.content-header {
   width: 100%;
+  height: 100px;
+  color: var(--color-text);
+  font-size: var(--text-size-s);
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-l);
+
+  .logo {
+    width: 200px;
+  }
+
+  nav {
+    width: 30%;
+    ul {
+      display: flex;
+      gap: var(--spacing-l);
+      justify-content: flex-end;
+
+      li:hover {
+        color: var(--color-secondary)
+      }
+    }
+  }
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  right: 35%;
+  width: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+  text-align: center;
+  color: var(--color-text);
+  font-size: var(--text-size-h1);
 }
 
 main {
@@ -12,6 +47,7 @@ main {
   .content-left {
     height: 50dvh;
     width: 50%;
+    margin-left: 64px;
   }
 
   aside {
@@ -19,19 +55,42 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     gap: var(--spacing-m);
+    position: relative;
+
+    .click-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: var(--spacing-s) var(--spacing-m);
+      background-color: var(--color-secondary);
+      color: var(--color-text);
+      border-radius: 8px;
+      border: 2px solid var(--color-background);
+
+      &:hover {
+        background-color: var(--color-background);
+        border: 2px solid var(--color-secondary);
+        color: var(--color-secondary);
+      }
+    }
 
     ul {
-      list-style: none;
+      position: absolute;
+      width: 280px;
+      height: auto;
+      bottom: 32px;
+      right: 0;
       display: flex;
+      flex-wrap: wrap;
       justify-content: flex-end;
       gap: var(--spacing-m);
-      color: var(--color-text);
+      color: var(--color-primary);
 
       li {
         width: fit-content;
         height: auto;
         padding: var(--spacing-s) var(--spacing-m);
-        border: 1px solid var(--color-text);
+        font-size: var(--text-size-base);
       }
     }
   }
