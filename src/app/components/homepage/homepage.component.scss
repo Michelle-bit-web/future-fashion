@@ -1,0 +1,8 @@
+main {
+    width: 100%;
+    height: calc(100dvh - 120px);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    clip-path: url(#main-clip);
+    padding: 0 var(--spacing-l);
+}

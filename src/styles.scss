@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    button {
+        cursor: pointer;
+        border: none;
+        font-family: inherit;
+    }
+}
+
+/* Colors */
+:root {
+    // --color-primary: #1f2f40;
+    // --color-secondary: #101d26;
+    // --color-background: #f8500a;
+    // --color-text: #dde2e5;
+
+    --color-primary: #414648;
+    --color-secondary: #151a17;
+    --color-background: #63df0f;
+    --color-text: #e2e1dc;
+}
+
+/* Padding and Margins */
+:root {
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+}
+
+/* Typography */
+:root {
+    --text-size-h1: 48px;
+    --text-size-h2: 36px; 
+    --text-size-h3: 24px;
+    --text-size-base: 24px;
+    --text-size-s: 16px;
+}
+
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 1480px;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 0 var(--spacing-s);
+    }
+
+    .frozen-glass {
+        width: fit-content;
+        height: fit-content;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        padding: var(--spacing-m);
+    }
+}
